@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+	<h1><%= post.title %></h1>
+	<p><%= post.body %></p>
+<% end %>
+
+<% if current_user %>
+	<p>
+		<%= current_user.role %>
+	</p>
+<% end %>	
